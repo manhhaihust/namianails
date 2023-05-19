@@ -8,10 +8,11 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 
 export class LoginComponent implements OnInit {
-
-  constructor() {}
   loginForm: FormGroup ;
 
+  constructor() {}
+
+  
   ngOnInit(): void {
     
     this.loginForm = new FormGroup ({
@@ -24,5 +25,7 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     console.log(this.loginForm);
   }
+
+
   
 }
